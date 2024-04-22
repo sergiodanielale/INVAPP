@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="utf-8">
 <title></title>
@@ -44,16 +44,13 @@ body {
     transform: rotate(360deg);
   }
 }
-
-  </style>
+</style>
 </head>
 <body>
   <script>
     const AS_URL_BASE = "https://script.google.com/macros/s/AKfycbzo8lf2RueDH-9xU5vw-uxubBr-XELFeCKiJSLK4CjD4xP_GEwx-xUoueE6u0w8fUVH/exec";
-    
     var url = document.location.href;
     var k = url.substr(url.lastIndexOf("k=")+2);
-    
     if(k){
       fetch(AS_URL_BASE+'?k='+k)
       .then(r => r.text())
@@ -66,11 +63,9 @@ body {
       })
       .catch(err => console.log(err))
     }
-
   </script>
   
   <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
-  
   
 </body>
 </html>
